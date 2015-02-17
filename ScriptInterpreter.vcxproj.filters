@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{df84d37a-d9a0-494c-b4d7-886ede2994cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\language">
+      <UniqueIdentifier>{6ed83e52-798f-41b4-944f-728800b8ae0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\language">
+      <UniqueIdentifier>{cf2f8a0f-c032-47e2-aa88-9c720e831274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\parser">
+      <UniqueIdentifier>{46f416e9-c9c5-47a5-bcdc-3420f6dedb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\parser">
+      <UniqueIdentifier>{81768a45-9c2b-4c4b-9529-f5cf54364c06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\program">
+      <UniqueIdentifier>{74128925-bb54-46bf-8196-551ab02d550d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\program">
+      <UniqueIdentifier>{c9072276-e45b-4cae-8eaf-fb1071f4b193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test">
+      <UniqueIdentifier>{f180db1f-95ed-4f5f-b8dc-1e5847fade8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{0f1e5a14-c3d0-42ae-8ea2-a7d413bbf69b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\program.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\language\ilanguage.h">
+      <Filter>Header Files\language</Filter>
+    </ClInclude>
+    <ClInclude Include="src\language\ilanguage_function.h">
+      <Filter>Header Files\language</Filter>
+    </ClInclude>
+    <ClInclude Include="src\language\ioperator.h">
+      <Filter>Header Files\language</Filter>
+    </ClInclude>
+    <ClInclude Include="src\language\language.h">
+      <Filter>Header Files\language</Filter>
+    </ClInclude>
+    <ClInclude Include="src\language\language_functions.h">
+      <Filter>Header Files\language</Filter>
+    </ClInclude>
+    <ClInclude Include="src\language\language_operators.h">
+      <Filter>Header Files\language</Filter>
+    </ClInclude>
+    <ClInclude Include="src\parser\interpreter_exception.h">
+      <Filter>Header Files\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\parser\script.h">
+      <Filter>Header Files\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\parser\token.h">
+      <Filter>Header Files\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\program\cpu.h">
+      <Filter>Header Files\program</Filter>
+    </ClInclude>
+    <ClInclude Include="src\program\function.h">
+      <Filter>Header Files\program</Filter>
+    </ClInclude>
+    <ClInclude Include="src\program\operation.h">
+      <Filter>Header Files\program</Filter>
+    </ClInclude>
+    <ClInclude Include="src\program\scope.h">
+      <Filter>Header Files\program</Filter>
+    </ClInclude>
+    <ClInclude Include="src\program\value.h">
+      <Filter>Header Files\program</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\util.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\language\language_operators.cpp">
+      <Filter>Source Files\language</Filter>
+    </ClCompile>
+    <ClCompile Include="src\language\language.cpp">
+      <Filter>Source Files\language</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parser\token.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parser\script.cpp">
+      <Filter>Source Files\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\cpu.cpp">
+      <Filter>Source Files\program</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\operation.cpp">
+      <Filter>Source Files\program</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\program.cpp">
+      <Filter>Source Files\program</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\scope.cpp">
+      <Filter>Source Files\program</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\test.cpp">
+      <Filter>Source Files\test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\test\test_script.txt">
+      <Filter>Source Files\test</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

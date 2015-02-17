@@ -1,0 +1,2 @@
+msgbox("this is the content");
+msgbox("this is the content", "this has a title");
