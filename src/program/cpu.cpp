@@ -21,15 +21,15 @@ void CPU::process(const Operation& op)
 	case OpCode::Divide: {
 		long long a = m_regs[op.m_a].asLong();
 		long long b = m_regs[op.m_b].asLong();
-		if(b == 0) {
+		if(a == 0) {
 			throw CPUException(CPUException::DIVISION_BY_ZERO);
 		}
-		m_regs[CPU_RESULT_REGISTER] = Value(std::to_string(a / b));
+		m_regs[CPU_RESULT_REGISTER] = Value(std::to_string(b / a));
 		break;
 	}
 
 	case OpCode::Subtract:
-		m_regs[CPU_RESULT_REGISTER] = Value(std::to_string(m_regs[op.m_a].asLong() - m_regs[op.m_b].asLong()));
+		m_regs[CPU_RESULT_REGISTER] = Value(std::to_string(m_regs[op.m_b].asLong() - m_regs[op.m_a].asLong()));
 		break;
 
 	case OpCode::Multiply:

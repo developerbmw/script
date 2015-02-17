@@ -1,2 +1,1 @@
-msgbox("this is the content");
-msgbox("this is the content", "this has a title");
+msgbox(10/3*5);
