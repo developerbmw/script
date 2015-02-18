@@ -11,7 +11,7 @@ Script::Script(std::string script, ILanguage& language) : m_pLanguage(&language)
 	// pre-processing
 	int pLevel = 0;
 	SITokenType prevType = SITokenType::Invalid;
-	bool function = false;
+	std::vector<int> functionLevels;
 
 	for (auto it = m_tokens.begin(); it != m_tokens.end();) {
 		if (*it == m_pLanguage->m_openParentheses) {
@@ -21,7 +21,7 @@ Script::Script(std::string script, ILanguage& language) : m_pLanguage(&language)
 				prevType = it->m_type;
 				it = m_tokens.erase(it);
 			} else {
-				function = true;
+				functionLevels.push_back(pLevel - 1);
 				prevType = it->m_type;
 				++it;
 			}
@@ -29,10 +29,10 @@ Script::Script(std::string script, ILanguage& language) : m_pLanguage(&language)
 			if(pLevel-- <= 0)
 				throw ParserException(ParserException::SYNTAX_ERROR, m_pLanguage->m_closeParentheses);
 
-			if(function) {
+			if(!functionLevels.empty() && pLevel == functionLevels.back()) {
 				prevType = it->m_type;
 				++it;
-				function = false;
+				functionLevels.pop_back();
 			} else {
 				prevType = it->m_type;
 				it = m_tokens.erase(it);
