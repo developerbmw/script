@@ -63,9 +63,6 @@
     <ClInclude Include="src\language\language_operators.h">
       <Filter>Header Files\language</Filter>
     </ClInclude>
-    <ClInclude Include="src\parser\interpreter_exception.h">
-      <Filter>Header Files\parser</Filter>
-    </ClInclude>
     <ClInclude Include="src\parser\script.h">
       <Filter>Header Files\parser</Filter>
     </ClInclude>
@@ -89,6 +86,9 @@
     </ClInclude>
     <ClInclude Include="src\util\util.h">
       <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\program\interpreter_exception.h">
+      <Filter>Header Files\program</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

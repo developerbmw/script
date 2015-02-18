@@ -85,11 +85,11 @@
     <ClInclude Include="src\language\language.h" />
     <ClInclude Include="src\language\language_functions.h" />
     <ClInclude Include="src\language\language_operators.h" />
-    <ClInclude Include="src\parser\interpreter_exception.h" />
     <ClInclude Include="src\parser\script.h" />
     <ClInclude Include="src\parser\token.h" />
     <ClInclude Include="src\program\cpu.h" />
     <ClInclude Include="src\program\function.h" />
+    <ClInclude Include="src\program\interpreter_exception.h" />
     <ClInclude Include="src\program\operation.h" />
     <ClInclude Include="src\program\scope.h" />
     <ClInclude Include="src\program\value.h" />
