@@ -4,7 +4,7 @@
 #include <istream>
 #include <vector>
 #include "language/ilanguage.h"
-#include "parser/interpreter_exception.h"
+#include "program/interpreter_exception.h"
 #include "program/operation.h"
 #include "program/function.h"
 #include <unordered_map>

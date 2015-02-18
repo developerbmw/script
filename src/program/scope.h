@@ -2,7 +2,7 @@
 #define SCOPE_H
 
 #include <unordered_map>
-#include "parser/interpreter_exception.h"
+#include "program/interpreter_exception.h"
 #include "program/value.h"
 
 class Scope
